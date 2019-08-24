@@ -99,9 +99,6 @@ dev.off()
 
 ## making the names in the SCC dataframe pretty by removing \\. in all the names
 names(SCC)<-gsub("\\.","", names(SCC))
-
-
-
 SCCcombustion<-grepl(pattern = "comb", SCC$SCCLevelOne, ignore.case = TRUE)
 SCCCoal<-grepl(pattern = "coal", SCC$SCCLevelFour, ignore.case = TRUE)
 
